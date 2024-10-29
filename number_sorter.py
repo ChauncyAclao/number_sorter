@@ -7,5 +7,6 @@
 #input and loop
 while True:
     number = input("input number:")
-    if not number.isdigit:
+    if not (number.isdigit() and int(number) <= 50 and int(number) >= 1) :
+        print("end of input")    
         break
