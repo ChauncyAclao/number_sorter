@@ -13,8 +13,10 @@ while True:
         break
 #array
     numbers.append({
-        "num" : number
+        "num" : int(number)
     })
 
-print(numbers)
+#print(numbers)
 
+num_1to10 = [nums["num"] for nums in numbers if (nums["num"] >= 1 and nums["num"] <= 10)]
+print("1-10:",num_1to10)
